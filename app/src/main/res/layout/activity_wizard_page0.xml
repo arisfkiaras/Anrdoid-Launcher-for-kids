@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:text="Abilities:"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginLeft="14dp"
+                android:background="#8b8686"
+                xmlns:android="http://schemas.android.com/apk/res/android" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:text="Things your child will be able to do from his phone:"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="31dp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:textSize="16sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="23dp"
+                    android:text="Play Games:"
+                    />
+                <CheckBox
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/play_games"
+                    android:checked="true"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="31dp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="16dp"
+                    android:textSize="17sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="23dp"
+                    android:text="Make Phonecalls:"
+                    />
+                <CheckBox
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/make_phonecalls"
+                    android:checked="true"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="31dp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="16dp"
+                    android:textSize="17sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="23dp"
+                    android:text="Access the Internet:"
+                    />
+                <CheckBox
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/access_internet"
+                    android:checked="true"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="31dp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:textSize="16sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="23dp"
+                    android:text="Use Tool Apps:"
+                    />
+                <CheckBox
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/use_tools"
+                    android:checked="true"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="22dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:text="Restrict screentime:"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginLeft="14dp"
+                android:background="#8b8686"
+                xmlns:android="http://schemas.android.com/apk/res/android" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/help"
+                    android:id="@+id/help"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="36dp"
+                    android:paddingTop="10dp"
+                    android:textSize="15sp"
+                    android:textColor="#ffffff"
+                    android:paddingLeft="5dp"
+                    android:text="Maximum hours per day:"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="40dp"
+
+                    android:entries="@array/hours"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:weightSum="2.5"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="Next"
+            android:id="@+id/next"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

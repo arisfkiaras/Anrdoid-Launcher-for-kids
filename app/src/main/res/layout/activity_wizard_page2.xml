@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:text="Manage Applications:"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="14dp"
+            android:background="#8b8686"
+            xmlns:android="http://schemas.android.com/apk/res/android" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:text="Choose which apps will be available:"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    >
+    <ScrollView android:id="@+id/ScrollView01" android:layout_width="match_parent" android:layout_height="wrap_content" >
+        <TableLayout android:id="@+id/app_list" android:layout_width="match_parent" android:layout_height="100dp" android:stretchColumns="0">
+        </TableLayout>
+    </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:weightSum="2.5"
+        android:layout_gravity="bottom"
+        >
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="Prev"
+            android:id="@+id/prev"
+            android:layout_gravity="center_horizontal" />
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="Next"
+            android:id="@+id/next"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</LinearLayout>

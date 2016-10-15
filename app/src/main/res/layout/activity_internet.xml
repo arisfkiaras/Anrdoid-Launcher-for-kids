@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+        <!--Toolbar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="#000000"
+            >
+            <include layout="@layout/status_bar" />
+        </LinearLayout>
+        <!--Body-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="25dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:background="@drawable/internet_background"
+            >
+            <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                >
+                    <RelativeLayout android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" android:id="@+id/site_1">
+
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" android:id="@+id/site_2">
+
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" android:id="@+id/site_3">
+
+                    </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                ><RelativeLayout android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"></RelativeLayout>
+                <RelativeLayout android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" android:id="@+id/site_4">
+
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4" android:id="@+id/site_5">
+
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" android:id="@+id/site_6">
+
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"></RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:background="@drawable/home_mini"
+        android:scaleType="fitXY"
+        android:id="@+id/bacbutton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="1dp"/>
+</RelativeLayout>
